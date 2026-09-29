@@ -1,0 +1,65 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_GB
+% !TeX root = ../thesis.tex
+
+
+\chapter{Introduction}
+\label{chapter:introduction}
+
+In order to start using this template, change the values inside \texttt{thesis.tex} to your liking. \emph{It is strongly advised to only change what is necessary (language, names etc.).} Please also remember to remove the "REMOVE ME LATER" part when you are done. Below you can find some examples of important \LaTeX-commands.
+
+This is a cited text~\cite{taubmann2016CloudPhylactor}.
+
+\todo{Add more content}
+
+This is a reference to \Cref{chapter:conclusions,sec:some-section}.
+
+We can also add code such as in \Cref{lst:log}.
+
+\begin{code}
+    \captionof{listing}{Captions for listings are usually placed above. Java code calculating the logarithm of a given number with respect to a given base.}
+    \label{lst:log}
+    \begin{minted}{java}
+public static double log(double x, double base) {
+    return Math.log(x) / Math.log(base);
+}
+    \end{minted}
+\end{code}
+
+You can also include and reference figures and tables such as \Cref{fig:test} and \Cref{tab:test}. Notice how the table cannot be placed using the "h" specifier and thus uses the "t" specifier instead?
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/logouni.png}
+    \caption{Captions for figures are usually placed below. The German logo of the University of Passau.}
+    \label{fig:test}
+\end{figure}
+
+URLs can be added for example like this: \url{https://www.fim.uni-passau.de/technische-informatik/}.
+
+\begin{table}[ht!]
+    \centering
+    \caption{Captions for tables are usually placed above. $\phi$ denotes the Euler totient function, by the way.}
+    \label{tab:test}
+    \begin{tabular}{c|c}
+        $x$ & $\phi(x)$ \\
+        \hhline{=|=}
+        $1$ & $1$ \\
+        \hline
+        $2$ & $1$ \\
+        \hline
+        $3$ & $2$ \\
+        \hline
+        $4$ & $2$ \\
+        \hline
+        $5$ & $4$ \\
+        \hline
+        $6$ & $2$
+    \end{tabular}
+\end{table}
+	
+\section{Some section...}
+\label{sec:some-section}
+
+\lipsum
+%\lipsum[3-56]

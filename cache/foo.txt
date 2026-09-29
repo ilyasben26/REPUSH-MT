@@ -1,0 +1,1 @@
+This file is a placeholder so that the .cache folder is recognised and the tikz externalize library works.
